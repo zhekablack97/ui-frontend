@@ -1,0 +1,78 @@
+@import '../../styles/colors.scss';
+
+.button{
+    border-radius: 8px;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.primary{
+    background-color: $background-accent;
+    color: $white;
+
+    &:hover{
+        background-color: $background-accent-active;
+    }
+}
+
+.secondary{
+    background-color: $background-button-green;
+    color: $white;
+
+    &:hover{
+        background-color: $background-button-green-hover;
+    }
+}
+
+.tertiary{
+    background-color: $background-primary;
+    color: $text-primary;
+
+    &:hover{
+        color: $text-accent;
+    }
+}
+
+.outline{
+    border: 1px solid $stroke-primary;
+    color: $text-primary;
+
+    &:hover{
+        color: $text-accent;
+    }
+
+}
+
+.sm{
+    height: 32px;
+}
+
+.md{
+    height: 40px;
+}
+
+.xl{
+    height: 48px;
+}
+
+.disabled.primary{
+    background-color: $background-primary;
+    color: $text-disabled;
+}
+
+.disabled.secondary{
+    color: $text-disabled-white;
+}
+
+.disabled.tertiary{
+    color: $text-disabled;
+}
+
+.disabled.outline{
+    color: $text-disabled;
+}
